@@ -1,86 +1,27 @@
-git<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
  <head>
   <meta charset="utf-8">
-  <title>Батарейкаxcvdfvdf</title>
-  <style>
-   .b {
-    width: 150px; /* Ширина */
-    height: 50px; /* Высота */
-    border: 4px solid #000; /* Параметры рамки */
-    margin-bottom: 10px; /* Отступ снизу */
-    position: relative; /* Относительное позиционирование */
-   }
-   .b::before, .b::after {
-    content: '';
-    position: absolute;
-   }
-   .b::after { /* Добавляем контакт справа */
-    width: 10px;
-    height: 20px;
-    background: #000;
-    right: -10px; top: 15px;
-   }
-   .b::before { height: 100%; }
-   .low::before { /* Красная батарейка */
-    width: 33%;
-    background: #ED1C24;
-   }
-   .medium::before { /* Жёлтая батарейка */
-    width: 66%;
-    background: #FFC60B;
-   }
-   .high::before { /* Зелёная батарейка */
-    width: 100%;
-    background: #00A055;
-   }
-  </style>
+  <title>Уильям Шекспир</title>
  </head>
  <body>
-  <div class="b low"></div>
-  <div class="b medium"></div>
-  <div class="b high"></div>
+  <script> const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели7', '');
+    const personalMovieDB = {
+        count: numberOfFilms,
+        movies: {},
+        actors: {},
+        geners: [],
+        privat: false
+    };
+    const a = prompt('Одиниз просмотренных фильмов?', ''),
+    b = prompt('На сколько хотите оценить его?', ''),
+    c = prompt('Одиниз просмотренных фильмов?', ''),
+    d = prompt('На сколько хотите оценить его?', '');
+    
+    personalMovieDB.movies[a] = b;
+    personalMovieDB.movies[c] = d;
+    
+    console.log(personalMovieDB);
+    </script>
  </body>
-</html><!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8">
-  <title>Батарейка</title>
-  <style>
-   .b {
-    width: 150px; /* Ширина */
-    height: 50px; /* Высота */
-    border: 4px solid #000; /* Параметры рамки */
-    margin-bottom: 10px; /* Отступ снизу */
-    position: relative; /* Относительное позиционирование */
-   }
-   .b::before, .b::after {
-    content: '';
-    position: absolute;
-   }
-   .b::after { /* Добавляем контакт справа */
-    width: 10px;
-    height: 20px;
-    background: #000;
-    right: -10px; top: 15px;
-   }
-   .b::before { height: 100%; }
-   .low::before { /* Красная батарейка */
-    width: 33%;
-    background: #ED1C24;
-   }
-   .medium::before { /* Жёлтая батарейка */
-    width: 66%;
-    background: #FFC60B;
-   }
-   .high::before { /* Зелёная батарейка */
-    width: 100%;
-    background: #00A055;
-   }
-  </style>
- </head>
- <body>
-  <div class="b low"></div>
-  <div class="b medium"></div>
-  <div class="b high"></div>
- </body>
+</html>
